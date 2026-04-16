@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saud_frontend/images.dart';
 
 import 'app_bar.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: AppBarScreen(),
+      home: ImagesDemo(),
     );
   }
 }
