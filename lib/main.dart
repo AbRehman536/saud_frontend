@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saud_frontend/date_time.dart';
 import 'package:saud_frontend/girdView/gridView_builder1.dart';
 import 'package:saud_frontend/girdView/gridView_count.dart';
 import 'package:saud_frontend/girdView/staggered_grid.dart';
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: GridviewStaggered(),
+      home: PageviewDemo(),
     );
   }
 }
