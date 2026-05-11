@@ -7,6 +7,7 @@ import 'package:saud_frontend/images.dart';
 import 'package:saud_frontend/listTile.dart';
 import 'package:saud_frontend/pageView.dart';
 import 'package:saud_frontend/singleSelection.dart';
+import 'package:saud_frontend/slider.dart';
 import 'package:saud_frontend/stack_menu.dart';
 import 'package:saud_frontend/textFields.dart';
 
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: StackDemo(),
+      home: MyCarousel(),
     );
   }
 }
