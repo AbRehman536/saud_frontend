@@ -39,6 +39,7 @@ dependencies:
   intl:
   carousel_slider: ^5.0.0
   pinput:
+  provider: ^6.1.5+1
 
 dev_dependencies:
   flutter_test:

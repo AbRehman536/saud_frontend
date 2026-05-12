@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:saud_frontend/date_time.dart';
 import 'package:saud_frontend/girdView/gridView_builder1.dart';
 import 'package:saud_frontend/girdView/gridView_count.dart';
@@ -6,6 +7,9 @@ import 'package:saud_frontend/girdView/staggered_grid.dart';
 import 'package:saud_frontend/images.dart';
 import 'package:saud_frontend/listTile.dart';
 import 'package:saud_frontend/pageView.dart';
+import 'package:saud_frontend/passing_parameter/screen_1.dart';
+import 'package:saud_frontend/provider/screen_a.dart';
+import 'package:saud_frontend/provider/user_provider.dart';
 import 'package:saud_frontend/singleSelection.dart';
 import 'package:saud_frontend/slider.dart';
 import 'package:saud_frontend/stack_menu.dart';
@@ -15,7 +19,11 @@ import 'app_bar.dart';
 import 'multiple_selection.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context)=>UserProvider())
+      ],
+  child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -45,7 +53,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: MyCarousel(),
+      home: ScreenA(),
     );
   }
 }
