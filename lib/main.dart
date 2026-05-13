@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:saud_frontend/bottom_bar.dart';
 import 'package:saud_frontend/date_time.dart';
 import 'package:saud_frontend/girdView/gridView_builder1.dart';
 import 'package:saud_frontend/girdView/gridView_count.dart';
@@ -13,6 +14,7 @@ import 'package:saud_frontend/provider/user_provider.dart';
 import 'package:saud_frontend/singleSelection.dart';
 import 'package:saud_frontend/slider.dart';
 import 'package:saud_frontend/stack_menu.dart';
+import 'package:saud_frontend/tab_bar.dart';
 import 'package:saud_frontend/textFields.dart';
 
 import 'app_bar.dart';
@@ -53,7 +55,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: ScreenA(),
+      home: BottomBarDemo(),
     );
   }
 }
