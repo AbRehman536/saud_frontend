@@ -41,6 +41,7 @@ dependencies:
   pinput:
   provider: ^6.1.5+1
   google_maps_flutter:
+  google_fonts:
 
 dev_dependencies:
   flutter_test:

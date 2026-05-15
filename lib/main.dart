@@ -11,6 +11,7 @@ import 'package:saud_frontend/images.dart';
 import 'package:saud_frontend/listTile.dart';
 import 'package:saud_frontend/pageView.dart';
 import 'package:saud_frontend/passing_parameter/screen_1.dart';
+import 'package:saud_frontend/project.dart';
 import 'package:saud_frontend/provider/screen_a.dart';
 import 'package:saud_frontend/provider/user_provider.dart';
 import 'package:saud_frontend/singleSelection.dart';
@@ -57,7 +58,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: GoogleMapDemo(),
+      home: LoginScreen(),
     );
   }
 }
